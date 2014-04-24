@@ -13,7 +13,7 @@ class Search
 	    elsif value > array[mid]
 	      return recursive_binary_search array, value, mid + 1, to
 	    else
-	      return array[mid]
+	      return mid
 	    end
 	  else
 	  	nil

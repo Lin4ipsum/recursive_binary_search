@@ -13,17 +13,17 @@ describe Search do
 
 	it "will return the value if the value is less than the mid" do
 		a = [3,5,17,22,31,53,77,92]
-		@s.recursive_binary_search(a, 17).should == 17
+		@s.recursive_binary_search(a, 17).should == 2
 	end
 
 	it "will return the value if the value is greater than the mid" do
 		a = [3,5,17,22,31,53,77,92]
-		@s.recursive_binary_search(a, 77).should == 77
+		@s.recursive_binary_search(a, 77).should == 6
 	end
 
 	it "will return the value if the value is equal to mid" do
 		a = [3,5,17,22,31,53,77,92]
-		@s.recursive_binary_search(a, 22).should == 22
+		@s.recursive_binary_search(a, 22).should == 3
 	end
 
 	it "will return nil the value if the value is not in the arrray" do
