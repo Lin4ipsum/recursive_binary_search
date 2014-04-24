@@ -11,7 +11,7 @@ describe Search do
 		expect(@s.recursive_binary_search(a, 17)).to_not raise_error(ArgumentError)
 	end
 
-	it "will return the value if the value is in the arrray" do
+	it "will return the value if the value is less than the mid" do
 		a = [3,5,17,22,31,53,77,92]
 		@s.recursive_binary_search(a, 17).should == 17
 	end
