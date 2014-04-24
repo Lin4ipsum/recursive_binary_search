@@ -21,6 +21,11 @@ describe Search do
 		@s.recursive_binary_search(a, 77).should == 77
 	end
 
+	it "will return the value if the value is equal to mid" do
+		a = [3,5,17,22,31,53,77,92]
+		@s.recursive_binary_search(a, 22).should == 22
+	end
+
 	it "will return nil the value if the value is not in the arrray" do
 		a = [3,5,17,22,31,53,77,92]
 		@s.recursive_binary_search(a, 18).should == nil
